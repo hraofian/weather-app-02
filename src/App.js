@@ -1,10 +1,11 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
-import "./styles/components/App.scss"
+import "./styles/components/App.scss";
 
 function App() {
+  const dark = false;
   return (
-    <div className="App">
+    <div className={`App-${dark ? "dark" : "light"}`}>
       <Header />
       <Main />
     </div>
@@ -12,4 +13,5 @@ function App() {
 }
 
 export default App;
- 
+
+// min 07.30
