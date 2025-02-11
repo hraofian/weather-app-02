@@ -1,11 +1,15 @@
+import Header from "./components/Header";
+import Main from "./components/Main";
+import "./styles/components/App.scss"
+
 function App() {
   return (
     <div className="App">
-      <h1>Happy Coding! </h1>
-      <h1>Hello </h1>
-      <h2>ReactJs Weather App | By Code Explained</h2>
+      <Header />
+      <Main />
     </div>
   );
 }
 
 export default App;
+ 
