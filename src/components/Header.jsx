@@ -11,6 +11,6 @@ function Header() {
       <Settings />
     </div>
   );
-}
+} 
 
 export default Header;

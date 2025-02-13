@@ -1,8 +1,18 @@
+import "../styles/components/Search.scss"
 
 function Search() {
   return (
-    <div className="Search">Search</div>
-  )
+    <>
+      <div className="search-container">
+        <div className="search-icon">
+          <i className="bi bi-search"></i>
+        </div>
+        <div className="search-input">
+          <input type="text" name="search-city" placeholder="search city ..." />
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Search
+export default Search;

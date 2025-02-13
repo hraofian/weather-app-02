@@ -1,10 +1,10 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
 import "./styles/components/App.scss";
-import "bootstrap-icons/font/bootstrap-icons.css"
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {
-  const dark = false;
+  const dark = true;
   return (
     <div className={`App-${dark ? "dark" : "light"}`}>
       <Header />
@@ -15,4 +15,4 @@ function App() {
 
 export default App;
 
-// min 08.19
+// min 13.54
