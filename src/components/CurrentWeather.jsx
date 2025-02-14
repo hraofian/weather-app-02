@@ -76,7 +76,23 @@ function CurrentWeader() {
         </div>
         <div className="summary">{summary}</div>
       </div>
-      <div className="other-infos"></div>
+      <div className="other-infos">
+        {otherInfoWidgets.map(({ id, icon, name, value, unit }) => (
+          <div className="widget">
+            <div className="widget-container">
+              <div className="info">
+                <div className="icon">
+                  <i className={`bi bi-${icon}`}></i>
+                </div>
+                <div className="value">
+                  {value} {unit}
+                </div>
+              </div>
+              <div className="name">{name}</div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
