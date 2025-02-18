@@ -78,7 +78,7 @@ function CurrentWeader() {
       </div>
       <div className="other-infos">
         {otherInfoWidgets.map(({ id, icon, name, value, unit }) => (
-          <div className="widget">
+          <div className="widget" key={id}>
             <div className="widget-container">
               <div className="info">
                 <div className="icon">
