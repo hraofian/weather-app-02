@@ -1,4 +1,5 @@
 import { getCurrentWeather } from "../api/index";
+import WeatherIcon from "./WeatherIcon.tsx";
 
 function CurrentWeader() {
   const data = getCurrentWeather();
@@ -65,10 +66,11 @@ function CurrentWeader() {
     <div className="CurrentWeather">
       <div className="temperature">
         <div className="weather-icon">
-          <img
+          <WeatherIcon iconNumber={icon_num} summary={summary}/>
+          {/* <img
             src={`${process.env.PUBLIC_URL}/dist/weather_icons/set04/big/${icon_num}.png`}
             alt={summary}
-          />
+          /> */}
         </div>
         <div className="value">
           <div className="real">{temperature} ℃</div>
