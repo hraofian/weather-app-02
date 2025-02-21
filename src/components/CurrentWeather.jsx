@@ -96,5 +96,5 @@ function CurrentWeader() {
     </div>
   );
 }
-
+ 
 export default CurrentWeader;
