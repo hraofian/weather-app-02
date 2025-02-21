@@ -15,4 +15,4 @@ function App() {
 
 export default App;
 
-// min 25.23
+// min 29.33
