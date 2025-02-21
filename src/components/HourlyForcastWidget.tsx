@@ -16,7 +16,7 @@ function HourlyForcastWidget({ data }) {
       minute: "2-digit",
     }).format(new Date().setMinutes(0)),
   };
-  
+
   const weather_date = {
     day: new Intl.DateTimeFormat(navigator.language, {
       weekday: "short",
@@ -29,7 +29,12 @@ function HourlyForcastWidget({ data }) {
     }).format(new Date(date).setMinutes(0)),
   };
 
-  weather_date.day = weather_date.day === now_date.day ? "Today" : ""
+  weather_date.day =
+    weather_date.day === now_date.day && weather_date.time === now_date.time
+      ? "Today"
+      : weather_date.time === "12:00 PM" ? weather_date.day : "";
+
+
   return (
     <div className="widget">
       <div className="day">{weather_date.day}</div>
