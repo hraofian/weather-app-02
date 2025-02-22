@@ -1,5 +1,5 @@
 import { getCurrentWeather } from "../api/index";
-import WeatherIcon from "./WeatherIcon.tsx";
+import WeatherIcon from "./WeatherIcon";
 
 function CurrentWeader() {
   const data = getCurrentWeather();

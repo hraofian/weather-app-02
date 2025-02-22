@@ -1,6 +1,6 @@
 import "../styles/components/Forecast.scss";
-import HourlyForcastWidget from "./HourlyForcastWidget.tsx";
-import DailyForcastWidget from "./DailyForcastWidget.tsx";
+import HourlyForcastWidget from "./HourlyForcastWidget";
+import DailyForcastWidget from "./DailyForcastWidget";
 
 function Forcast({ title, type, data }) {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon.tsx";
+import WeatherIcon from "./WeatherIcon";
 
 function HourlyForcastWidget({ data }) {
   const { date, icon, summary, temperature, precipitation, wind } = data;
@@ -32,8 +32,9 @@ function HourlyForcastWidget({ data }) {
   weather_date.day =
     weather_date.day === now_date.day && weather_date.time === now_date.time
       ? "Today"
-      : weather_date.time === "12:00 PM" ? weather_date.day : "";
-
+      : weather_date.time === "12:00 PM"
+      ? weather_date.day
+      : "";
 
   return (
     <div className="widget">

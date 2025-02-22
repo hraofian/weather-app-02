@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon.tsx";
+import WeatherIcon from "./WeatherIcon";
 
 function DailyForcastWidget({ data }) {
   const {
