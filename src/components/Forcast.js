@@ -8,18 +8,16 @@ function Forcast({ title, type, data }) {
     <div className="Forecast">
       <div className="forcast-container">
         <h3>{title}</h3>
-        <HorizontallyScrollable>
-          <div className="widget-container">
-            {data.map((singleData) => (
-              <div key={singleData.date || singleData.day}>
-                {type === "hourly" ? (
-                  <HourlyForcastWidget data={singleData} />
-                ) : (
-                  <DailyForcastWidget data={singleData} />
-                )}
-              </div>
-            ))}
-          </div>
+        <HorizontallyScrollable className="widget-container">
+          {data.map((singleData) => (
+            <div key={singleData.date || singleData.day}>
+              {type === "hourly" ? (
+                <HourlyForcastWidget data={singleData} />
+              ) : (
+                <DailyForcastWidget data={singleData} />
+              )}
+            </div>
+          ))}
         </HorizontallyScrollable>
       </div>
     </div>
