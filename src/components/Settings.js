@@ -1,5 +1,10 @@
+import { useContext } from "react";
+import WeatherContext from "../context/theme.context"
 import "../styles/components/Settings.scss"
+
+
 function Settings() {
+  const {dark} = useContext(WeatherContext)
   return (
     <div className="Settings">
       <div className="theme-toggler">
